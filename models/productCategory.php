@@ -16,5 +16,4 @@ class ProductCategory
 
       return  $this->type;
    }
-
 }
