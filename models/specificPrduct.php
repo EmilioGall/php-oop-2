@@ -10,7 +10,7 @@ class SpecificProduct extends Product
 
    private ProductCategory   $product_category;
 
-   public function __construct(string $_name, int $_price, AnimalCategory $_animal_category, ProductCategory $_product_category)
+   public function __construct(string $_name, float $_price, AnimalCategory $_animal_category, ProductCategory $_product_category)
    {
 
       parent::__construct($_name, $_price, $_animal_category);

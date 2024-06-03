@@ -7,10 +7,10 @@ class Product
 {
 
    private string           $name;
-   private int              $price;
+   private float              $price;
    private AnimalCategory   $animal_category;
 
-   public function __construct(string $_name, int $_price, AnimalCategory $_animal_category)
+   public function __construct(string $_name, float $_price, AnimalCategory $_animal_category)
    {
 
       $this->name             = $_name;

@@ -20,13 +20,37 @@ $product_category_toy = new ProductCategory('toy');
 
 
 /**********  INSTANCES FOR PRODUCTS  **********/
+$products_array = [];
+
+/* Creation of product_1 array */
 $product_1 = new SpecificProduct('Top food for big dogs', 25.5, $animal_category_big_dogs, $product_category_food);
+
+$product_1_array = [];
+
+$product_1_name = $product_1->getName();
+$product_1_array['name'] = $product_1_name;
+
+$product_1_name = $product_1->getPrice();
+$product_1_array['price'] = $product_1_name;
+
+$product_1_name = $product_1->getAnimalCategory()->getSize() . ' ' . $product_1->getAnimalCategory()->getSpecies();
+$product_1_array['animal_category'] = $product_1_name;
+
+$product_1_name = $product_1->getProductCategory()->getType();
+$product_1_array['product_category'] = $product_1_name;
+
+var_dump($product_1_array);
+
+
+
+
 $product_2 = new SpecificProduct('Best toy for small cats', 12.4, $animal_category_small_cats, $product_category_toy);
 $product_3 = new SpecificProduct('Beautiful kennel for small dogs', 52.6, $animal_category_small_dogs, $product_category_kennel);
 $product_4 = new SpecificProduct('Top food for big cats', 18.4, $animal_category_big_cats, $product_category_food);
 $product_5 = new SpecificProduct('Best toy for big dogs', 12.4, $animal_category_big_dogs, $product_category_toy);
 $product_6 = new SpecificProduct('Beautiful kennel for big dogs', 71.2, $animal_category_big_dogs, $product_category_kennel);
 
+// var_dump($product_6);
 
 
 ?>
