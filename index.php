@@ -39,8 +39,8 @@ $product_1_array['animal_category'] = $product_1_name;
 $product_1_name = $product_1->getProductCategory()->getType();
 $product_1_array['product_category'] = $product_1_name;
 
-var_dump($product_1_array);
-
+// var_dump($product_1_array);
+$products_array[] = $product_1_array;
 
 /* Creation of product_2 array */
 $product_2 = new SpecificProduct('Best toy for small cats', 12.4, $animal_category_small_cats, $product_category_toy);
@@ -59,8 +59,8 @@ $product_2_array['animal_category'] = $product_2_name;
 $product_2_name = $product_2->getProductCategory()->getType();
 $product_2_array['product_category'] = $product_2_name;
 
-var_dump($product_2_array);
-
+// var_dump($product_2_array);
+$products_array[] = $product_2_array;
 
 /* Creation of product_3 array */
 $product_3 = new SpecificProduct('Beautiful kennel for small dogs', 52.6, $animal_category_small_dogs, $product_category_kennel);
@@ -79,8 +79,8 @@ $product_3_array['animal_category'] = $product_3_name;
 $product_3_name = $product_3->getProductCategory()->getType();
 $product_3_array['product_category'] = $product_3_name;
 
-var_dump($product_3_array);
-
+// var_dump($product_3_array);
+$products_array[] = $product_3_array;
 
 /* Creation of product_4 array */
 $product_4 = new SpecificProduct('Top food for big cats', 18.4, $animal_category_big_cats, $product_category_food);
@@ -99,8 +99,8 @@ $product_4_array['animal_category'] = $product_4_name;
 $product_4_name = $product_4->getProductCategory()->getType();
 $product_4_array['product_category'] = $product_4_name;
 
-var_dump($product_4_array);
-
+// var_dump($product_4_array);
+$products_array[] = $product_4_array;
 
 /* Creation of product_5 array */
 $product_5 = new SpecificProduct('Best toy for big dogs', 12.4, $animal_category_big_dogs, $product_category_toy);
@@ -119,8 +119,8 @@ $product_5_array['animal_category'] = $product_5_name;
 $product_5_name = $product_5->getProductCategory()->getType();
 $product_5_array['product_category'] = $product_5_name;
 
-var_dump($product_5_array);
-
+// var_dump($product_5_array);
+$products_array[] = $product_5_array;
 
 /* Creation of product_6 array */
 $product_6 = new SpecificProduct('Beautiful kennel for big dogs', 71.2, $animal_category_big_dogs, $product_category_kennel);
@@ -139,8 +139,11 @@ $product_6_array['animal_category'] = $product_6_name;
 $product_6_name = $product_6->getProductCategory()->getType();
 $product_6_array['product_category'] = $product_6_name;
 
-var_dump($product_6_array);
+// var_dump($product_6_array);
+$products_array[] = $product_6_array;
 
+
+// var_dump($products_array);
 
 ?>
 
@@ -165,10 +168,48 @@ var_dump($product_6_array);
 
    <div class="container-md">
 
-      <h1>Connected</h1>
+      <!-- Title -->
+      <h1 class="fs-1 text-primary text-center my-4">Products List</h1>
+      <!-- /Title -->
 
+      <!-- Cards Section -->
+      <section class="row g-4 mb-5">
 
+         <?php foreach ($products_array as $key => $product) { ?>
+            <div class="col-4">
 
+               <div class="card">
+
+                  <div class="card-body">
+
+                     <h3 class="card-title"><?php echo $product['name']; ?></h3>
+
+                     <h6 class="card-subtitle mb-2 text-body-secondary"> Price: <?php echo $product['price']; ?>0 €</h6>
+
+                     <div class="mb-4">
+
+                        <p class="card-text my-1">Animal Category: <?php echo $product['animal_category']; ?></p>
+
+                        <p class="card-text my-1">Product Category: <?php echo $product['product_category']; ?></p>
+
+                     </div>
+
+                     <div class="d-flex justify-content-between">
+
+                        <button type="button" class="btn btn-primary">Add to Cart</button>
+
+                        <button type="button" class="btn btn-outline-info">Add to Favorites</button>
+
+                     </div>
+
+                  </div>
+               </div>
+
+            </div>
+         <?php } ?>
+
+      </section>
+      <!-- /Cards Section -->
 
    </div>
 
