@@ -8,13 +8,24 @@ $animal_category_big_dogs = new AnimalCategory('dogs', 'big');
 $animal_category_small_cats = new AnimalCategory('cats', 'small');
 $animal_category_big_cats = new AnimalCategory('cats', 'big');
 
-var_dump($animal_big_cats);
+// var_dump($animal_big_cats);
+
 
 /**********  INSTANCES FOR PRODUCTS CATEGORY  **********/
 $product_category_food = new ProductCategory('food');
 $product_category_kennel = new ProductCategory('kennel');
 $product_category_toy = new ProductCategory('toy');
 
+// var_dump($product_category_toy);
+
+
+/**********  INSTANCES FOR PRODUCTS  **********/
+$product_1 = new SpecificProduct('Top food for big dogs', 25.5, $animal_category_big_dogs, $product_category_food);
+$product_2 = new SpecificProduct('Best toy for small cats', 12.4, $animal_category_small_cats, $product_category_toy);
+$product_3 = new SpecificProduct('Beautiful kennel for small dogs', 52.6, $animal_category_small_dogs, $product_category_kennel);
+$product_4 = new SpecificProduct('Top food for big cats', 18.4, $animal_category_big_cats, $product_category_food);
+$product_5 = new SpecificProduct('Best toy for big dogs', 12.4, $animal_category_big_dogs, $product_category_toy);
+$product_6 = new SpecificProduct('Beautiful kennel for big dogs', 71.2, $animal_category_big_dogs, $product_category_kennel);
 
 
 
