@@ -42,15 +42,104 @@ $product_1_array['product_category'] = $product_1_name;
 var_dump($product_1_array);
 
 
-
-
+/* Creation of product_2 array */
 $product_2 = new SpecificProduct('Best toy for small cats', 12.4, $animal_category_small_cats, $product_category_toy);
+
+$product_2_array = [];
+
+$product_2_name = $product_2->getName();
+$product_2_array['name'] = $product_2_name;
+
+$product_2_name = $product_2->getPrice();
+$product_2_array['price'] = $product_2_name;
+
+$product_2_name = $product_2->getAnimalCategory()->getSize() . ' ' . $product_2->getAnimalCategory()->getSpecies();
+$product_2_array['animal_category'] = $product_2_name;
+
+$product_2_name = $product_2->getProductCategory()->getType();
+$product_2_array['product_category'] = $product_2_name;
+
+var_dump($product_2_array);
+
+
+/* Creation of product_3 array */
 $product_3 = new SpecificProduct('Beautiful kennel for small dogs', 52.6, $animal_category_small_dogs, $product_category_kennel);
+
+$product_3_array = [];
+
+$product_3_name = $product_3->getName();
+$product_3_array['name'] = $product_3_name;
+
+$product_3_name = $product_3->getPrice();
+$product_3_array['price'] = $product_3_name;
+
+$product_3_name = $product_3->getAnimalCategory()->getSize() . ' ' . $product_3->getAnimalCategory()->getSpecies();
+$product_3_array['animal_category'] = $product_3_name;
+
+$product_3_name = $product_3->getProductCategory()->getType();
+$product_3_array['product_category'] = $product_3_name;
+
+var_dump($product_3_array);
+
+
+/* Creation of product_4 array */
 $product_4 = new SpecificProduct('Top food for big cats', 18.4, $animal_category_big_cats, $product_category_food);
+
+$product_4_array = [];
+
+$product_4_name = $product_4->getName();
+$product_4_array['name'] = $product_4_name;
+
+$product_4_name = $product_4->getPrice();
+$product_4_array['price'] = $product_4_name;
+
+$product_4_name = $product_4->getAnimalCategory()->getSize() . ' ' . $product_4->getAnimalCategory()->getSpecies();
+$product_4_array['animal_category'] = $product_4_name;
+
+$product_4_name = $product_4->getProductCategory()->getType();
+$product_4_array['product_category'] = $product_4_name;
+
+var_dump($product_4_array);
+
+
+/* Creation of product_5 array */
 $product_5 = new SpecificProduct('Best toy for big dogs', 12.4, $animal_category_big_dogs, $product_category_toy);
+
+$product_5_array = [];
+
+$product_5_name = $product_5->getName();
+$product_5_array['name'] = $product_5_name;
+
+$product_5_name = $product_5->getPrice();
+$product_5_array['price'] = $product_5_name;
+
+$product_5_name = $product_5->getAnimalCategory()->getSize() . ' ' . $product_5->getAnimalCategory()->getSpecies();
+$product_5_array['animal_category'] = $product_5_name;
+
+$product_5_name = $product_5->getProductCategory()->getType();
+$product_5_array['product_category'] = $product_5_name;
+
+var_dump($product_5_array);
+
+
+/* Creation of product_6 array */
 $product_6 = new SpecificProduct('Beautiful kennel for big dogs', 71.2, $animal_category_big_dogs, $product_category_kennel);
 
-// var_dump($product_6);
+$product_6_array = [];
+
+$product_6_name = $product_6->getName();
+$product_6_array['name'] = $product_6_name;
+
+$product_6_name = $product_6->getPrice();
+$product_6_array['price'] = $product_6_name;
+
+$product_6_name = $product_6->getAnimalCategory()->getSize() . ' ' . $product_6->getAnimalCategory()->getSpecies();
+$product_6_array['animal_category'] = $product_6_name;
+
+$product_6_name = $product_6->getProductCategory()->getType();
+$product_6_array['product_category'] = $product_6_name;
+
+var_dump($product_6_array);
 
 
 ?>
