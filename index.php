@@ -2,6 +2,12 @@
 
 require_once __DIR__ . '/models/specificPrduct.php';
 
+/********** CLASSES FOR ANIMALS **********/
+$animal_small_dogs = new AnimalCategory('dogs', 'small');
+$animal_big_dogs = new AnimalCategory('dogs', 'big');
+$animal_small_cats = new AnimalCategory('cats', 'small');
+$animal_big_cats = new AnimalCategory('cats', 'big');
+
 
 ?>
 
@@ -24,7 +30,14 @@ require_once __DIR__ . '/models/specificPrduct.php';
 
 <body>
 
-<h1>Connected</h1>
+   <div class="container-md">
+
+      <h1>Connected</h1>
+
+
+
+
+   </div>
 
 </body>
 
