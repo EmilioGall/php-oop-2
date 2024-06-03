@@ -2,11 +2,20 @@
 
 require_once __DIR__ . '/models/specificPrduct.php';
 
-/********** CLASSES FOR ANIMALS **********/
-$animal_small_dogs = new AnimalCategory('dogs', 'small');
-$animal_big_dogs = new AnimalCategory('dogs', 'big');
-$animal_small_cats = new AnimalCategory('cats', 'small');
-$animal_big_cats = new AnimalCategory('cats', 'big');
+/**********  INSTANCES FOR ANIMALS CATEGORY  **********/
+$animal_category_small_dogs = new AnimalCategory('dogs', 'small');
+$animal_category_big_dogs = new AnimalCategory('dogs', 'big');
+$animal_category_small_cats = new AnimalCategory('cats', 'small');
+$animal_category_big_cats = new AnimalCategory('cats', 'big');
+
+var_dump($animal_big_cats);
+
+/**********  INSTANCES FOR PRODUCTS CATEGORY  **********/
+$product_category_food = new ProductCategory('food');
+$product_category_kennel = new ProductCategory('kennel');
+$product_category_toy = new ProductCategory('toy');
+
+
 
 
 ?>
