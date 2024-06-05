@@ -3,6 +3,7 @@
 require_once __DIR__ . '/productCategory.php';
 require_once __DIR__ . '/animalCategory.php';
 require_once __DIR__ . '/product.php';
+require_once __DIR__ . '/../traits/weightable.php';
 
 
 class SpecificProduct extends Product

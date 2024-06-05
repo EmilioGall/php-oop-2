@@ -23,7 +23,7 @@ trait Weightable
       $this->animalWeight = $animalWeight;
    }
 
-   public function getWeightInKg(): float
+   public function getAnimalWeightInKg(): float
    {
 
       return $this->animalWeight / 1000;
