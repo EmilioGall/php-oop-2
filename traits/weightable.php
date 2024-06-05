@@ -17,10 +17,17 @@ trait Weightable
     * Set the value of animalWeight
     *
     */
-   public function setAnimalWeight(int $animalWeight): void
+   public function setAnimalWeight(int $_animalWeight): void
    {
 
-      $this->animalWeight = $animalWeight;
+      if ($_animalWeight < 0) {
+
+         throw new Exception("Weight can not be less than 0");
+         
+      } else {
+         
+         $this->animalWeight = $_animalWeight;
+      }
    }
 
    public function getAnimalWeightInKg(): float

@@ -14,6 +14,16 @@ $animal_category_big_cats->setAnimalWeight(4500);
 
 // var_dump($animal_category_big_dogs);
 
+/**********  Attempt to catch the Exception in Weightable **********/
+
+// try {
+
+//    $animal_category_small_dogs->setAnimalWeight(-1);
+
+// } catch (\Throwable $th) {
+
+//    echo 'Negative weight input, change value';
+// }
 
 
 
