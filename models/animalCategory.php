@@ -1,7 +1,10 @@
 <?php
 
+require_once __DIR__ . '/../traits/weightable.php';
+
 class AnimalCategory
 {
+   use Weightable;
 
    private string $species;
    private string $size;

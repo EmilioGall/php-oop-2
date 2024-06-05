@@ -4,9 +4,13 @@ require_once __DIR__ . '/models/specificPrduct.php';
 
 /**********  INSTANCES FOR ANIMALS CATEGORY  **********/
 $animal_category_small_dogs = new AnimalCategory('dogs', 'small');
+$animal_category_small_dogs->setAnimalWeight(4800);
 $animal_category_big_dogs = new AnimalCategory('dogs', 'big');
+$animal_category_small_dogs->setAnimalWeight(4800);
 $animal_category_small_cats = new AnimalCategory('cats', 'small');
+$animal_category_small_dogs->setAnimalWeight(4800);
 $animal_category_big_cats = new AnimalCategory('cats', 'big');
+$animal_category_small_dogs->setAnimalWeight(4800);
 
 // var_dump($animal_big_cats);
 
